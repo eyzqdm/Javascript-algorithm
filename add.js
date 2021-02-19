@@ -1,4 +1,12 @@
-/* function add() {
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 14:55:55
+ * @LastEditTime: 2021-02-19 10:22:18
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \JavaScript-algorithm\add.js
+ */
+function add() {
   // 第一次执行时，定义一个数组专门用来存储所有的参数
   var _args = [].slice.call(arguments);
 
@@ -21,9 +29,9 @@
   };
   // return adder.apply(null, _args);
   return adder(..._args);
-} */
+}
 
-function add() {
+/* function add() {
     // 第一次执行时，定义一个数组专门用来存储所有的参数
     var _args = [].slice.call(arguments);
   
@@ -51,5 +59,5 @@ function add() {
     // return adder.apply(null, _args);
     return _adder;
   }
-  
-console.log(add(1)(2)(3,4))
+   */
+console.log(add(1)(2)(3,4)())
