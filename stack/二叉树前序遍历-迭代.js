@@ -1,5 +1,4 @@
 var preorderTraversal = function(root) {
-  
     const res = []
     const stack = []
     var node = null
