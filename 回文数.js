@@ -1,27 +1,24 @@
-const num = 1234321
 
-function check(num){
+const num = 1234321;
 
-    let _arr = []
+function check(num) {
+  let _arr = [];
 
-    _arr = num.toString().split('')
+  _arr = num.toString().split("");
 
-    let i = 0
-    let j = _arr.length - 1
+  let i = 0;
+  let j = _arr.length - 1;
 
-    while(i<j)
-    {
-       if(_arr[i] !== _arr[j])
-       {
-        return false
-       }
-        
-        i++
-        j--
+  while (i < j) {
+    if (_arr[i] !== _arr[j]) {
+      return false;
     }
 
-    return true
+    i++;
+    j--;
+  }
 
+  return true;
 }
 
- console.log(check(num))
+console.log(check(num));
