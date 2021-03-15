@@ -1,3 +1,8 @@
+
+
+/* 用广优 遇到叶子则立即停止
+重点是要给每个节点标记一下其自身的深度
+ */
 var minDepth = function (root) {
 
     if (!root) return 0
