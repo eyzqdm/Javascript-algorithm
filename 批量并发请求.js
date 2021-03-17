@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-04 10:36:37
+ * @LastEditTime: 2021-03-17 13:28:01
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \JavaScript-algorithm\批量并发请求.js
+ */
 // 模拟ajax请求
 function majax(url) {
   return new Promise((resolve, reject) => {
@@ -81,6 +89,9 @@ function request(urls, maxNum) {
 request([1, 2, 3, 4, 5, 6], 3).then((res) => {
   console.log(res);
 });
+
+/* 我们把异步请求放在一个队列里，比如并发数是3，就先同时发起3个请求，然后有请求结束了，
+再发起下一个请求即可， 思路清楚，代码也就呼之欲出了 */
 
 /*  首先执行while 同步代码 一直添加异步请求。达到并发限制时
 跳出while,此时同步任务执行完毕，执行异步任务。每执行完一个请求，
