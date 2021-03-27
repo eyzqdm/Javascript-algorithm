@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-03-04 10:36:37
- * @LastEditTime: 2021-03-26 17:33:55
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \JavaScript-algorithm\批量并发请求.js
- */
 // 模拟ajax请求
 function majax(url) {
   return new Promise((resolve, reject) => {
