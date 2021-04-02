@@ -9,7 +9,7 @@ function bubbling(arr) {
     }
   }
 
-  return arr
+  return arr;
 }
 
-console.log(bubbling([3,2,4,7,9,1,6]))
+console.log(bubbling([3, 2, 4, 7, 9, 1, 6]));
