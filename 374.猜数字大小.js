@@ -8,7 +8,7 @@
 0：我选出的数字和你猜的数字一样。恭喜！你猜对了！pick == num
 返回我选出的数字。
  */
-var guessNumber = function (n) {
+/* var guessNumber = function (n) {
 
     let low = 0
     let high = n
@@ -23,4 +23,21 @@ var guessNumber = function (n) {
         }
     }
 
+}; */
+var guessNumber = function (n) {
+    let low = 1;
+    let high = n;
+    const rec = (l, h) => {
+        if (l > h) return
+        const mid = Math.floor((l + h) / 2);
+        const res = guess(mid)
+        if (res === 0) {
+            return mid;
+        } else if (res === 1) {
+            return rec(mid + 1, h);
+        } else {
+            return rec(l, mid - 1);
+        }
+    };
+    return rec(low, high);
 };
