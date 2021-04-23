@@ -1,3 +1,7 @@
+/*
+利用二分查找思想
+需要提供判断平方根的函数  
+*/
 var mySqrt = function (x) {
     if (x === 1) return x
     const isSq = (e, t) => {

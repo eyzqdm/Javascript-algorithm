@@ -1,3 +1,6 @@
+/*
+合并链表 首先确定表头 之后谁大就把谁插进去 继续往下走
+ */
 function ListNode(val, next) {
   this.val = val === undefined ? 0 : val;
   this.next = next === undefined ? null : next;

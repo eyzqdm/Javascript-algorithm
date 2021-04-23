@@ -1,3 +1,6 @@
+/*
+法一 给a链表每个节点标记一下 遍历b链表 发现被标记的几点就返回 
+ */
 var getIntersectionNode = function (headA, headB) {
   let p1 = headA;
   while (p1) {

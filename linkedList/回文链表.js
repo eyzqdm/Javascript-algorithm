@@ -1,3 +1,6 @@
+/*
+转为数组 头尾判断 
+ */
 var isPalindrome = function (head) {
     if (!head) return true;
     let arr = [];

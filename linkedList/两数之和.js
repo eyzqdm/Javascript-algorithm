@@ -1,3 +1,8 @@
+/*
+用链表 节点值相加 对10取整存下一节点  对10取余 存余数 下两个节点相加加上这个余数
+相当于逢十进一的意思  注意最后处理余数
+ */
+
 var addTwoNumbers = function(l1, l2) {
     let l3 = new ListNode(0)
     let p1 = l1;

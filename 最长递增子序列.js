@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-02-05 14:51:49
- * @LastEditTime: 2021-02-05 15:26:42
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \JavaScript-algorithm\最长递增子序列.js
- */
 function lang(arr) {
   const length = arr.length;
 
