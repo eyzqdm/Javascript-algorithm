@@ -71,4 +71,10 @@ function para() {
   }
   console.log("end");
 }
-para(callback, a1, a2, a3);
+
+function para2() {
+  const [cb, ...others] = [...arguments];
+  Promise.all(others).then(cb)
+}
+
+serial(callback, a1, a2, a3);

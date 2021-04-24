@@ -1,3 +1,4 @@
+/* 统计重复元素 用set存储结果 方便去重 */
 function duplicates(arr) {
   let res = new Set();
   arr.reduce((pre, cur) => {
