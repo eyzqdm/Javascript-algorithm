@@ -1,3 +1,7 @@
+/*
+冒泡
+交换 注意第二轮循环长度要递减 
+ */
 function bubbling(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     for (let j = 0; j < arr.length - 1 - i; j++) {

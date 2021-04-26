@@ -1,3 +1,6 @@
+/*
+二分查找 
+ */
 function search(arr, item) {
   let low = 0;
   let high = arr.length - 1;

@@ -9,8 +9,10 @@ function merge(arr) {
   const mid = Math.floor(arr.length / 2);
   const left = arr.slice(0, mid);
   const right = arr.slice(mid, arr.length);
+  // 递归合并 得到有序数组
   const orderLeft = merge(left);
   const orderRight = merge(right);
+  // 合并两个有序数组
   while (orderLeft.length && orderRight.length) {
     if (orderLeft[0] < orderRight[0]) {
       res.push(orderLeft.shift());

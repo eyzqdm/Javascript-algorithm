@@ -8,7 +8,7 @@ function insertSort(arr) {
     let j = i;
     let temp = arr[i];
     while (j >= 0) {
-      // 依次与前面元素比较 若大于当前元素 则后移一位 最后的位置正好就是该元素应该插入的位置 
+      // 依次与前面元素比较 若大于当前元素 则当前元素后移一位 最后的位置正好就是该元素应该插入的位置 
       if (arr[j - 1] > temp) {
         arr[j] = arr[j - 1];
       } else {
