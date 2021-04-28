@@ -1,3 +1,6 @@
+/*
+考虑负数情况 反转后前几位有0 
+ */
 var reverse = function (x) {
   if(x === 0) return 0
   let num = x.toString().split("");

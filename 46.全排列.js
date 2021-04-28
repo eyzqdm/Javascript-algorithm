@@ -2,20 +2,19 @@
 求全排列
 
  */
-var permute = function(nums) {
-
-   const res = []
-   const rec = (path) => {
-       if(path.length === nums.length){
-           res.push(path)
-           return
-       }
-       nums.forEach((n)=>{
-           if(path.includes(n)) return
-           rec(path.concat(n))
-       })
-   }
-   rec([])
-   return res
+var permute = function (nums) {
+  const res = [];
+  const rec = (path) => {
+    if (path.length === nums.length) {
+      res.push(path);
+      return;
+    }
+    nums.forEach((n) => {
+      if (path.includes(n)) return;
+      rec(path.concat(n));
+    });
+  };
+  rec([]);
+  return res;
 };
-permute([1,2,3])
+permute([1, 2, 3]);
