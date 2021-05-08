@@ -9,7 +9,7 @@ function lang(arr) {
     } else {
       let left = 0;
       let right = res.length - 1;
-      while (left<right) {
+      while (left < right) {
         let mid = (left + right) >> 1;
         if (res[mid] < arr[i]) {
           left = mid + 1;
@@ -26,4 +26,4 @@ function lang(arr) {
   console.log(res);
 }
 
-lang([3, 5, 6, 2, 5, 4, 19,13,5, 6, 7, 12]);
+lang([3, 5, 6, 2, 5, 4, 19, 13, 5, 6, 7, 12]);
