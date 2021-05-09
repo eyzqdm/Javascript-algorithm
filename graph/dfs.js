@@ -7,7 +7,6 @@ const graph = {
 
 let visited = new Set();
 const dfs = (root) => {
-  console.log(root);
   visited.add(root);
   graph[root].forEach((i) => {
     if (!visited.has(i)) {
