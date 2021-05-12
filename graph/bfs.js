@@ -29,3 +29,4 @@ const bfs = (root) => {
 };
 
 bfs(2)
+console.log(visited)

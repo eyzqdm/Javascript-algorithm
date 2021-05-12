@@ -39,10 +39,7 @@ const tree = {
 const Middle = (tree) => {
   let stack = [];
   p = tree
-  //console.log(p)
   while (stack.length || p!==null) {
-    // console.log(p)
-   // console.log(p)
     while (p) {
       stack.push(p);
       p = p.left;
