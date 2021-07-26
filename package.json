@@ -7,7 +7,7 @@
     "test": "node testttt.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node testttt.js"
   },
   "repository": {
     "type": "git",
