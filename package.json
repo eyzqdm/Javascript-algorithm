@@ -1,0 +1,31 @@
+{
+  "name": "JavaScript-algorithm",
+  "version": "1.0.0",
+  "description": "javascript实现的常用算法与数据结构",
+  "main": "110.平衡二叉树.js",
+  "directories": {
+    "test": "node testttt.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoqing19971002/JavaScript-algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guoqing19971002/JavaScript-algorithm/issues"
+  },
+  "homepage": "https://github.com/guoqing19971002/JavaScript-algorithm#readme",
+  "dependencies": {
+    "husky": "4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  }
+}
